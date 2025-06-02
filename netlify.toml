@@ -1,6 +1,6 @@
 [build]
   base = "/"
-  command = "CI= npm install --legacy-peer-deps && npm run build"
+  command = "CI=true npm install --legacy-peer-deps && CI=true npm run build"
   publish = "dist"
 
 [build.environment]
