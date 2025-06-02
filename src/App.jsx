@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SignIn from './Components/Auth/SignIn';
-import SignUp from './Components/Auth/SignUp';
-import News from './Components/News';
-import NewsRecap from './Components/newsrecap';
+import SignIn from './Components/Auth/SignIn.jsx';
+import SignUp from './Components/Auth/SignUp.jsx';
+import News from './Components/News.jsx';
+import NewsRecap from './Components/newsrecap.jsx';
 import { Amplify } from 'aws-amplify';
 
 console.log('App component is loading');
