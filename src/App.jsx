@@ -11,10 +11,9 @@ console.log('App component is loading');
 Amplify.configure({
   Auth: {
     Cognito: {
-      region: 'us-east-2',
-      userPoolId: 'us-east-2_ewbRjZzcD',
-      userPoolClientId: '32bp7itdsd4v75rkvnlqu4m9js',
-
+      region: import.meta.env.VITE_AWS_REGION,
+      userPoolId: import.meta.env.VITE_AWS_USER_POOL_ID,
+      userPoolClientId: import.meta.env.VITE_AWS_CLIENT_ID
     }
   }
 });
